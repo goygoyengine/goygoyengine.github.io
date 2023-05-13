@@ -1,0 +1,52 @@
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- MDB CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css">
+</head>
+<div class="grid">
+  <button id="twitter" class="button">Twitter</button>
+  <button id="instagram" class="button">Instagram</button>
+  <button id="telegram" class="button">Telegram</button>
+  <button id="discord" class="button">Discord</button>
+  <button id="minecraft" class="button">Minecraft Sunucusu</button>
+</div>
+
+
+<script>
+    // Butonları seç
+    var twitter = document.getElementById("twitter");
+    var instagram = document.getElementById("instagram");
+    var telegram = document.getElementById("telegram");
+    var discord = document.getElementById("discord");
+    var minecraft = document.getElementById("minecraft");
+    
+    // Butonlara tıklama olayları atayın
+    twitter.addEventListener("click", function() {
+      // Yeni sekmede Twitter hesabını aç
+        window.open("https://twitter.com/goygoyengine", "_blank");
+    });
+    
+    instagram.addEventListener("click", function() {
+      // Yeni sekmede Instagram hesabını aç
+        window.open("https://www.instagram.com/goygoyengine5/", "_blank");
+    });
+    
+    telegram.addEventListener("click", function() {
+      // Yeni sekmede Telegram adresini aç
+        window.open("https://t.me/goygoyengine", "_blank");
+    });
+    
+    discord.addEventListener("click", function() {
+      // Yeni sekmede Discord sunucusunu aç
+        window.open("https://discord.gg/p9j7R9j9sy", "_blank");
+    });
+    
+    minecraft.addEventListener("click", function() {
+    // Yeni sekmede Minecraft sunucusunu aç
+        window.open("https://goygoyengine.aternos.me/", "_blank");
+        alert("Sürüm: 1.19\n IP: goygoyengine.aternos.me:57563")
+    });
+</script>
