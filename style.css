@@ -1,0 +1,52 @@
+.button {
+    display: block; /* Butonları alt alta yap */
+    background-color: #4CAF50; /* Yeşil */
+    color: white; /* Beyaz */
+    border: none; /* Kenarlık yok */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Gölge efekti */
+    padding: 15px 32px; /* İç boşluk */
+    font-size: 16px; /* Yazı boyutu */
+
+    margin-bottom: 10px; /* Alt boşluk */
+    transition-duration: 0.4s; /* 0.4 saniyelik geçiş */
+    
+}
+  /* Her butona farklı bir id vererek farklı stiller uygulayabilirsiniz */
+  
+#twitter {
+    background-color: #1DA1F2; /* Twitter rengi */
+    grid-area: 1 / 1 / 2 / 2; /* Satır başlangıcı: 1, Sütun başlangıcı: 1, Satır bitişi: 2, Sütun bitişi: 2 */
+}
+  
+#instagram {
+    background-color: #E1306C; /* Instagram rengi */
+}
+  
+#telegram {
+    background-color: #0088CC; /* Telegram rengi */
+}
+  
+#discord {
+    background-color: #7289DA; /* Discord rengi */
+}
+  
+#minecraft {
+    background-color: #62B47A; /* Minecraft rengi */
+}
+
+.button:hover {
+    background-color: rgb(255, 0, 0); /* Kırmızı */
+}
+
+body {
+    background-image: linear-gradient(to right, blue, pink);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Beş tane eşit genişlikte sütun */
+    grid-template-rows: repeat(2, 1fr); /* İki tane eşit yükseklikte satır */
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+}
